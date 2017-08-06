@@ -1,0 +1,8 @@
+{
+    "name": "Calendar",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "Alton",
+    "contributors": [],
+    "dependencies": {"bootstrap                 ||||||":"3.3.7    ||||||",}
+}
