@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calendar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+        <script src="js/moment-with-locales.js"></script>
+        <!-- Bootstrap core CSS -->
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <!--        <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+        <!--<link href="css/navbar-static-top.css" rel="stylesheet">-->
+        <link href="css/famfamfam-flags.css" rel="stylesheet">
+        <!--<script src="js/ie-emulation-modes-warning.js"></script>-->
+        <style>
+            .full-width {
+                display: block;
+            }
+            .dateBox { margin: 1px; }
+            .dateBoxOM { background-color: snow; }
+            .month-title {
+                display: block;
+                height: 70px;
+                vertical-align: middle;
+                float: none;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            "use strict";
+            //var lc = "en-ca";
+            var lc = "en";
+        </script>
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Calendar</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Previous Month</a></li>
+                        <li><a href="#">Next Month</a></li>
+                        <li><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Month<span class="caret"></span></a>
+                            <ul id="SubNavMonth" class="dropdown-menu"></ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Year<span class="caret"></span></a>
+                            <ul id="SubNavYear" class="dropdown-menu"></ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >
+                                <i id="MenuLang" class="famfamfam-flag-gb" ></i> Language <span class="caret"></span></a>
+                            <ul id="Lang" class="dropdown-menu">
+                                <li onclick="changeFlag('gb', 'gb');"><a href="#"><i class="famfamfam-flag-gb"></i> English</a></li>
+                                <li onclick="changeFlag('us', 'en-us');"><a href="#"><i class="famfamfam-flag-us"></i> English (US)</a></li>
+                                <li onclick="changeFlag('fr', 'fr');"><a href="#"><i class="famfamfam-flag-fr"></i> French</a></li>
+                                <li onclick="changeFlag('es', 'es');"><a href="#"><i class="famfamfam-flag-es"></i> Spanish</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--Generate Help Item Contents-->
+<div class="container-fluid">
+  <div class="row">
+<div class="col-md-2">
+  C:\Users\adesl\Dropbox\MyProjectsWeb\Calendar (master)
+λ git config --global user.name Talon9
+
+C:\Users\adesl\Dropbox\MyProjectsWeb\Calendar (master)
+λ git config --global user.email adeslandes9@gmail.com
+
+C:\Users\adesl\Dropbox\MyProjectsWeb\Calendar (master)
+λ git config user.name
+Talon9
+
+C:\Users\adesl\Dropbox\MyProjectsWeb\Calendar (master)
+λ git config user.email
+adeslandes9@gmail.com
+
+</div>
+  </div>
+</div>
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <!--        <script src="js/ie10-viewport-bug-workaround.js"></script>-->
+    </body>
+</html>
